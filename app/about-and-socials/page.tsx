@@ -9,7 +9,7 @@ export default function AboutAndSocialsPage() {
 
   return (
     <div className="flex flex-col w-full">
-      <div className="w-full max-w-[1360px] mx-auto px-gutter py-space-lg flex flex-col gap-space-xl">
+      <div className="w-full max-w-[1360px] mx-auto px-gutter py-space-lg flex flex-col gap-space-xl mt-12">
         {/* Hero / Intro Asymmetric Banner */}
         <div className="relative w-full rounded-[2.5rem] bg-surface-container-lowest p-space-lg lg:p-space-xl clay-card overflow-hidden">
           <div className="absolute -right-20 -bottom-24 w-96 h-96 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>

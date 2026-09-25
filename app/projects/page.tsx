@@ -243,7 +243,7 @@ export default function ProjectsPage() {
 
   return (
     <div className="flex flex-col w-full">
-      <div className="w-full max-w-[1360px] mx-auto px-gutter-mobile md:px-gutter py-space-lg flex flex-col gap-space-lg">
+      <div className="w-full max-w-[1360px] mx-auto px-gutter-mobile md:px-gutter py-space-lg flex flex-col gap-space-lg mt-12">
         {/* Overline & Hero Title Bar */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
           <div className="flex flex-col gap-space-xs">

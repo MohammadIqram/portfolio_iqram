@@ -13,79 +13,73 @@ interface Testimonial {
   role: string;
   tag: string;
   tagClass?: string;
-  avatar: string;
+  icon: string;
+  avatar?: string;
 }
 
 const TESTIMONIALS_DATA: Testimonial[] = [
   {
     id: "1",
     category: "product",
-    quote: "“Transformed our bulky enterprise CRM into a delight that our sales team actually loves using.”",
-    body: "Re-engineered our component taxonomy and designed a tactile, reduced-cognitive-load interface that cut sales rep onboarding latency from 14 days down to 48 hours.",
-    author: "Sarah Jenkins",
-    role: "VP Product • FlowCRM",
-    tag: "Enterprise UX",
-    avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCWs-it2MfLY2E8Kvb3izNJ702ljlzK0IJWA6H_Bsx6hOiCadS9EaoC3tV6mcXFwgcNZcmN2LX5dzZyWa6KO4GnycpOy-2tcN4CXiN5LP99n4EearDRmgJKXXW_71en-9S6vP-gua1MgThqBtv4IjVij5ItKdvsH4xBQrSvkJozW5hZXXT9HwKxAef5NacPEBlyxOvBowO8J6SQDqm3Rn2eJlOY_WUuwyEtcdd6FBkz",
+    quote: "“Transformed our web platform into an intuitive experience our users love.”",
+    body: "Re-engineered our component taxonomy and designed a tactile, reduced-cognitive-load interface that cut user onboarding latency down significantly.",
+    author: "Azher Ali",
+    role: "Founder • Sharwings",
+    tag: "Platform Design",
+    icon: "domain",
   },
   {
     id: "2",
-    category: "engineering",
-    quote: "“Rare talent who designs world-class UIs and writes production-ready TypeScript backend code.”",
-    body: "Seamlessly engineered our ledger consensus microservice in NestJS and designed the real-time financial telemetry dashboard without needing any spec handoff translation.",
-    author: "Alex Rivera",
-    role: "CTO • LedgerScale",
-    tag: "Full-Stack TS",
-    tagClass: "bg-secondary-fixed/50 text-secondary",
-    avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCmFeiXDUpoVylQRCBzkVTqS9BNKg07KAEgG_bpKP6fXUPhuizjLyu0o-lIOPox28TLsvqXj--LPceIkfm51EnSqJtuSB9rqViC_KuQJ8EwvgIo4Kh5hNC0NdIxwWmoM57rQcmT7E5e8RSwl5OsiiIfZj44-U0BSRoS-wT5V4yp_VJjKkkhIBONOK04b5cw4Kr1bfWbGtdZLfPSH9OV4s66AwmL4gxdGskkCFU0AXJB",
+    category: "product",
+    quote: "“Brought a fresh, organic aesthetic to our digital garden experience.”",
+    body: "Crafted a custom visual hierarchy and smooth responsive layouts that drastically improved customer engagement and overall site aesthetics.",
+    author: "Zeeshan",
+    role: "Founder • Gardenbyzee",
+    tag: "E-Commerce",
+    icon: "park",
   },
   {
     id: "3",
-    category: "founder",
-    quote: "“Built our custom Shopify architecture resulting in 2.3x conversion jump in 30 days.”",
-    body: "From bespoke checkout flows to tactile interactive 3D product previews, every touchpoint was engineered to turn casual window-shoppers into high-LTV brand evangelists.",
-    author: "Maya Lin",
-    role: "Founder • Aura Commerce",
-    tag: "+230% ARR",
-    tagClass: "bg-primary-fixed/50 text-on-primary-fixed-variant",
-    avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDL1N6Ekie9ac1tM7gSjVzW-MPssj19SxFZCL4sfUtHGVkgX2RkjmzTMPPDNuHTIyUN5LgJdSjGAy7Phh0QtQfk7hdLbZ66zEhbxMZ5eLwn2hU6kSXMexNED-VZ1YqrRnGMfV-wzleeirAuUHVGHGHoPhFWkDBTIJZ3-3rHXgVDZB_P1mokqi4_ynpHFhAwqKNBRWGxnimRx_QWYU1q9dOedWcGGcskfYdJvKWh33AG",
+    category: "engineering",
+    quote: "“Rare talent who bridges intricate architectural specs with production-ready code.”",
+    body: "Engineered our core CAD viewer dashboard and real-time design telemetry interfaces with high performance and zero spec translation handoff issues.",
+    author: "Shams",
+    role: "Lead Architect • CADHauz",
+    tag: "Full-Stack TS",
+    tagClass: "bg-secondary-fixed/50 text-secondary",
+    icon: "architecture",
   },
   {
     id: "4",
-    category: "product",
-    quote: "“The inventory management dashboard reduced warehouse processing time by 40%.”",
-    body: "He didn't just give us flat wireframes; he modeled physical scanning ergonomics and tactile keyboard workflows that drastically reduced dispatch cycle errors across 12 hubs.",
-    author: "David Vance",
-    role: "Head of Ops • OmniInventory",
-    tag: "Supply Chain",
-    avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCmkuQHZAhHtvoduw_-W1toaiw1mXGVo0fvV15f9g8PmqyDT_dRgW-5-nwG6Fgz_tnwYpfVFA0yxkZcCEc8NivoUa5bpnzifW1adQxCKVaqVFxMOfEhuBjPHE-bxPX2ro_BydpQDlL73gnnELe4uO5RoccCJDwnyZqFoWyq_rejXDy_wd81Ceg-mEj17FVpQGK3mmhZOnxgGeZoF5CURz5AMeEUJ9XXVPNoqLFoCTR9",
+    category: "founder",
+    quote: "“Built a high-converting booking flow resulting in an immediate jump in inquiries.”",
+    body: "From custom quote engines to tactile interactive scheduling flows, every touchpoint was engineered to convert casual visitors into repeat clients.",
+    author: "Basir",
+    role: "Founder • GoGoMovers",
+    tag: "Logistics UX",
+    tagClass: "bg-primary-fixed/50 text-on-primary-fixed-variant",
+    icon: "local_shipping",
   },
   {
     id: "5",
     category: "product",
-    quote: "“Our employees praised the HRM overhaul; intuitive, warm, and highly functional.”",
-    body: "Replaced sterile data tables with soft, clay-modeled feedback cards and interactive sprint maps. Our employee Net Promoter Score rose from +14 to +62 in two quarters.",
-    author: "Elena Rostova",
-    role: "Dir. HR Tech • PeoplePulse",
-    tag: "eNPS +62",
-    tagClass: "bg-tertiary-fixed/40 text-on-tertiary-fixed-variant",
-    avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCU4vPi0UmDWgoYAb8tHGQrfMKl1siaHkI3_PLR8x0PzreVLq5f9IndDkMpltGV5j1-oFgg-qCdsZwVpCItqLiKyzk9cZYynh5kfsrahWqqRybXZqRRsEvlzImMoFnCPcCm5lF-HiGB8OVQIhxdFScQ63aPk7_jx5bos_xH-3lQETVkQAM4Zfol6UjKnPxFdJqOpGrZ23aQa_azGA9i8DQfOD4eXwlaqijD3uTCLRzZ",
+    quote: "“The platform overhaul made our digital catalog intuitive and seamless.”",
+    body: "Modeled ergonomic navigation and fast search workflows that drastically reduced discovery cycle errors across thousands of items.",
+    author: "Taskeen Majeed",
+    role: "Product Lead • Gembook",
+    tag: "Web App",
+    icon: "menu_book",
   },
   {
     id: "6",
-    category: "engineering",
-    quote: "“Incredible craft with motion and tactile feedback.”",
-    body: "Engineered micro-interactions and physics-based fluid dragging that make our scheduling tool feel like a physical, premium mechanical desk companion on both web and iOS.",
-    author: "Marcus Chen",
-    role: "Product Lead • Tempo Cal",
-    tag: "Micro-Physics",
-    tagClass: "bg-secondary-fixed/50 text-secondary",
-    avatar:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBzwRkZ3ysj7llSzSpRJYOrfS-J9cFElrxgDc8XRBoQHEoC7kBQ24Qo2odz2snRQRSiEo6RZ_1Ll55xsxUKXOsqaXdMA45OMVbqXQUjs_79uKEdQ-kNVxD9MROm8QpscQk_AtZ3GCeU_m1uiLhuwwiQU516akdAk4eGechc4Tdbd_0klKgJx-oWvLBBXuOX5KO8GntcTi_-5jeKEbx1Sv-uHEJyXSPH61sim-ywZ6Dg",
+    category: "product",
+    quote: "“Our interior design showcase went from static photos to an interactive journey.”",
+    body: "Replaced flat image grids with tactile portfolio cards and fluid project maps, elevating our luxury interior design brand identity.",
+    author: "Muneer",
+    role: "Creative Director • HomeAsset",
+    tag: "Interior Design",
+    tagClass: "bg-tertiary-fixed/40 text-on-tertiary-fixed-variant",
+    icon: "home",
   },
 ];
 
@@ -100,7 +94,7 @@ export default function TestimonialsPage() {
 
   return (
     <div className="flex flex-col w-full">
-      <section className="relative w-full max-w-[1360px] mx-auto px-gutter py-space-xl overflow-hidden">
+      <section className="relative w-full max-w-[1360px] mx-auto px-gutter py-space-xl overflow-hidden mt-12">
         {/* Ambient background glows */}
         <div className="absolute -top-24 -left-20 w-96 h-96 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
         <div className="absolute top-1/2 -right-32 w-[30rem] h-[30rem] bg-secondary-fixed/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
@@ -130,7 +124,7 @@ export default function TestimonialsPage() {
           {/* Filter Pills */}
           <div className="w-full flex flex-wrap items-center justify-center gap-space-xs p-2 rounded-full bg-surface-container-high/60 clay-sunken max-w-2xl mx-auto">
             {[
-              { id: "all", label: "All Reviews (18)" },
+              { id: "all", label: "All Reviews (6)" },
               { id: "founder", label: "Founders" },
               { id: "product", label: "VP of Product" },
               { id: "engineering", label: "Engineering Leads" },
@@ -189,11 +183,19 @@ export default function TestimonialsPage() {
               <div className="mt-space-lg pt-space-md flex items-center justify-between border-none bg-surface-container-low/60 -mx-space-lg -mb-space-lg p-space-md rounded-b-[2.5rem]">
                 <div className="flex items-center gap-space-sm min-w-0">
                   <div className="relative flex-shrink-0">
-                    <img
-                      className="w-12 h-12 rounded-full object-cover shadow-sm bg-surface-dim"
-                      alt={item.author}
-                      src={item.avatar}
-                    />
+                    {item.avatar ? (
+                      <img
+                        className="w-12 h-12 rounded-full object-cover shadow-sm bg-surface-dim"
+                        alt={item.author}
+                        src={item.avatar}
+                      />
+                    ) : (
+                      <div className="w-12 h-12 rounded-full bg-primary-fixed/80 flex items-center justify-center text-primary-container clay-pill">
+                        <span className="material-symbols-outlined text-headline-sm">
+                          {item.icon}
+                        </span>
+                      </div>
+                    )}
                     <div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container text-[11px] font-bold shadow-sm">
                       <span className="material-symbols-outlined text-[12px]">verified</span>
                     </div>

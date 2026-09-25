@@ -20,7 +20,7 @@ export default function StatsAndSkillsPage() {
       {/* SECTION 1: HEADER & KPI SUMMARY DECK */}
       <section className="w-full px-gutter max-w-[1360px] mx-auto pt-space-md pb-space-lg">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
-          <div className="flex flex-col gap-space-xs max-w-2xl">
+          <div className="flex flex-col gap-space-xs max-w-2xl mt-12">
             <div className="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-mono text-label-mono w-fit clay-sunken">
               <span className="material-symbols-outlined text-body-sm text-secondary">
                 analytics
