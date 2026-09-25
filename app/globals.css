@@ -1,26 +1,285 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --color-surface: #f9f9ff;
+    --color-surface-dim: #d5dae9;
+    --color-surface-bright: #f9f9ff;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f1f3ff;
+    --color-surface-container: #e9edfd;
+    --color-surface-container-high: #e4e8f7;
+    --color-surface-container-highest: #dee2f1;
+    --color-on-surface: #171c26;
+    --color-on-surface-variant: #58413c;
+    --color-inverse-surface: #2b303c;
+    --color-inverse-on-surface: #edf0ff;
+    --color-outline: #8c716b;
+    --color-outline-variant: #dfbfb8;
+    --color-surface-tint: #a9371b;
+    --color-primary: #a9371b;
+    --color-on-primary: #ffffff;
+    --color-primary-container: #ff7654;
+    --color-on-primary-container: #6d1400;
+    --color-inverse-primary: #ffb4a2;
+    --color-secondary: #5a46c7;
+    --color-on-secondary: #ffffff;
+    --color-secondary-container: #7360e2;
+    --color-on-secondary-container: #fffbff;
+    --color-tertiary: #006b55;
+    --color-on-tertiary: #ffffff;
+    --color-tertiary-container: #00b491;
+    --color-on-tertiary-container: #003e30;
+    --color-error: #ba1a1a;
+    --color-on-error: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-on-error-container: #93000a;
+    --color-primary-fixed: #ffdad2;
+    --color-primary-fixed-dim: #ffb4a2;
+    --color-on-primary-fixed: #3c0700;
+    --color-on-primary-fixed-variant: #882004;
+    --color-secondary-fixed: #e5deff;
+    --color-secondary-fixed-dim: #c8bfff;
+    --color-on-secondary-fixed: #190064;
+    --color-on-secondary-fixed-variant: #442cb1;
+    --color-tertiary-fixed: #67fbd2;
+    --color-tertiary-fixed-dim: #44deb6;
+    --color-on-tertiary-fixed: #002018;
+    --color-on-tertiary-fixed-variant: #005140;
+    --color-background: #f9f9ff;
+    --color-on-background: #171c26;
+    --color-surface-variant: #dee2f1;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Claymorphic Shadows and Utilities */
+.clay-pill {
+  box-shadow: 0 16px 32px -8px rgba(31, 36, 47, 0.08),
+              0 6px 12px -4px rgba(31, 36, 47, 0.04),
+              inset 0 4px 6px rgba(255, 255, 255, 0.8),
+              inset 0 -4px 6px rgba(31, 36, 47, 0.04);
 }
+
+.clay-btn-primary {
+  box-shadow: 0 12px 20px -4px rgba(255, 118, 84, 0.4),
+              inset 0 3px 3px rgba(255, 255, 255, 0.5),
+              inset 0 -3px 4px rgba(0, 0, 0, 0.15);
+}
+
+.clay-card {
+  box-shadow: 0 16px 32px -8px rgba(31, 36, 47, 0.08),
+              0 6px 12px -4px rgba(31, 36, 47, 0.04),
+              inset 0 4px 6px rgba(255, 255, 255, 0.75),
+              inset 0 -6px 8px rgba(31, 36, 47, 0.05);
+}
+
+.clay-sunken {
+  box-shadow: inset 0 3px 6px rgba(31, 36, 47, 0.08),
+              inset 0 -1px 2px rgba(255, 255, 255, 0.6);
+}
+
+/* Custom Spacing & Typography Utility Classes */
+.font-display {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -0.03em;
+}
+
+@media (max-width: 768px) {
+  .font-display {
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: -0.025em;
+  }
+}
+
+.font-headline-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .font-headline-lg {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.font-headline-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+}
+
+.font-headline-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+}
+
+.font-title-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.font-body-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.font-body-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.font-body-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.font-label-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+}
+
+.font-label-badge {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+
+/* Custom Spacings */
+.p-space-xs { padding: 0.375rem; }
+.p-space-sm { padding: 0.75rem; }
+.p-space-md { padding: 1.25rem; }
+.p-space-lg { padding: 2rem; }
+.p-space-xl { padding: 3.5rem; }
+
+.px-space-xs { padding-left: 0.375rem; padding-right: 0.375rem; }
+.px-space-sm { padding-left: 0.75rem; padding-right: 0.75rem; }
+.px-space-md { padding-left: 1.25rem; padding-right: 1.25rem; }
+.px-space-lg { padding-left: 2rem; padding-right: 2rem; }
+.px-space-xl { padding-left: 3.5rem; padding-right: 3.5rem; }
+
+.py-space-xs { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+.py-space-sm { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.py-space-md { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.py-space-lg { padding-top: 2rem; padding-bottom: 2rem; }
+.py-space-xl { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+
+.gap-space-xs { gap: 0.375rem; }
+.gap-space-sm { gap: 0.75rem; }
+.gap-space-md { gap: 1.25rem; }
+.gap-space-lg { gap: 2rem; }
+.gap-space-xl { gap: 3.5rem; }
+
+.px-gutter { padding-left: 1.5rem; padding-right: 1.5rem; }
+.px-gutter-mobile { padding-left: 1rem; padding-right: 1rem; }
+
+/* Custom Color Utilities */
+.bg-surface { background-color: var(--color-surface); }
+.bg-surface-dim { background-color: var(--color-surface-dim); }
+.bg-surface-bright { background-color: var(--color-surface-bright); }
+.bg-surface-container-lowest { background-color: var(--color-surface-container-lowest); }
+.bg-surface-container-low { background-color: var(--color-surface-container-low); }
+.bg-surface-container { background-color: var(--color-surface-container); }
+.bg-surface-container-high { background-color: var(--color-surface-container-high); }
+.bg-surface-container-highest { background-color: var(--color-surface-container-highest); }
+.bg-surface-variant { background-color: var(--color-surface-variant); }
+.bg-background { background-color: var(--color-background); }
+.bg-primary { background-color: var(--color-primary); }
+.bg-primary-container { background-color: var(--color-primary-container); }
+.bg-primary-fixed { background-color: var(--color-primary-fixed); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-secondary-container { background-color: var(--color-secondary-container); }
+.bg-secondary-fixed { background-color: var(--color-secondary-fixed); }
+.bg-tertiary { background-color: var(--color-tertiary); }
+.bg-tertiary-container { background-color: var(--color-tertiary-container); }
+.bg-tertiary-fixed { background-color: var(--color-tertiary-fixed); }
+
+.text-on-surface { color: var(--color-on-surface); }
+.text-on-surface-variant { color: var(--color-on-surface-variant); }
+.text-primary { color: var(--color-primary); }
+.text-on-primary { color: var(--color-on-primary); }
+.text-primary-container { color: var(--color-primary-container); }
+.text-on-primary-container { color: var(--color-on-primary-container); }
+.text-on-primary-fixed { color: var(--color-on-primary-fixed); }
+.text-on-primary-fixed-variant { color: var(--color-on-primary-fixed-variant); }
+.text-secondary { color: var(--color-secondary); }
+.text-on-secondary { color: var(--color-on-secondary); }
+.text-secondary-container { color: var(--color-secondary-container); }
+.text-on-secondary-fixed { color: var(--color-on-secondary-fixed); }
+.text-on-secondary-fixed-variant { color: var(--color-on-secondary-fixed-variant); }
+.text-tertiary { color: var(--color-tertiary); }
+.text-on-tertiary { color: var(--color-on-tertiary); }
+.text-tertiary-container { color: var(--color-tertiary-container); }
+.text-on-tertiary-container { color: var(--color-on-tertiary-container); }
+.text-on-tertiary-fixed { color: var(--color-on-tertiary-fixed); }
+.text-on-tertiary-fixed-variant { color: var(--color-on-tertiary-fixed-variant); }
+.text-outline { color: var(--color-outline); }
+.text-outline-variant { color: var(--color-outline-variant); }
+.border-outline-variant { border-color: var(--color-outline-variant); }
+.border-surface-variant { border-color: var(--color-surface-variant); }
+.border-surface-container-high { border-color: var(--color-surface-container-high); }
+
+/* Animation Keyframes */
+@keyframes floatSlow {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-24px) rotate(8deg); }
+}
+
+@keyframes floatMed {
+  0% { transform: translateY(0px) rotate(0deg); }
+  100% { transform: translateY(-18px) rotate(-10deg); }
+}
+
+@keyframes floatFast {
+  0% { transform: translateY(0px) scale(1); }
+  100% { transform: translateY(-14px) scale(1.05); }
+}
+
+@keyframes pulseSoft {
+  0% { filter: drop-shadow(0 15px 25px rgba(255,118,84,0.3)); }
+  100% { filter: drop-shadow(0 25px 35px rgba(255,118,84,0.5)); }
+}
+
+.float-1 { animation: floatSlow 6s ease-in-out infinite alternate; }
+.float-2 { animation: floatMed 5s ease-in-out infinite alternate-reverse; }
+.float-3 { animation: floatFast 4s ease-in-out infinite alternate; }
+.pulse-clay { animation: pulseSoft 4s ease-in-out infinite alternate; }
