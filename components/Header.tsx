@@ -32,11 +32,11 @@ export default function Header({ onOpenContact }: HeaderProps) {
         {/* Brand */}
         <div className="flex items-center gap-space-sm">
           <Link href="/" className="flex items-center gap-space-xs group">
-            <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary shadow-inner transition-transform group-hover:scale-105">
-              <span className="material-symbols-outlined text-headline-sm">polyline</span>
+            <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-extrabold tracking-tight text-sm clay-btn-primary shadow-inner transition-transform group-hover:scale-105 select-none">
+              MC
             </div>
             <span className="hidden sm:inline-block font-headline-sm text-headline-sm text-on-surface tracking-tight">
-              Kaelen.craft
+              iqram.craft
             </span>
           </Link>
 
