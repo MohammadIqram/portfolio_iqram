@@ -35,7 +35,7 @@ export default function HomePage() {
       </div>
 
       {/* Hero Presentation Section */}
-      <section className="relative w-full max-w-[1360px] mx-auto px-gutter pt-space-lg pb-space-xl">
+      <section className="relative w-full max-w-[1360px] mx-auto px-gutter pt-space-lg pb-space-xl mt-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
           {/* Left Column: Typographic Narrative & CTAs */}
           <div className="lg:col-span-7 flex flex-col gap-space-md z-10">
