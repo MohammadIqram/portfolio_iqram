@@ -29,7 +29,7 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-headline-sm">shapes</span>
               </div>
               <span className="font-headline-md text-headline-md text-on-surface tracking-tight">
-                Kaelen Vance
+                Mohammad Iqram
               </span>
             </div>
             <p className="font-body-md text-body-md text-on-surface-variant max-w-md">
@@ -133,7 +133,7 @@ export default function Footer() {
 
         <div className="mt-space-lg pt-space-md border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-space-sm">
           <span className="font-label-mono text-label-mono text-on-surface-variant text-center sm:text-left">
-            © 2025 Kaelen Vance. Sculpted with tactile code tokens.
+            © 2025 Mohammad Iqram. Sculpted with tactile code tokens.
           </span>
           <div className="flex items-center gap-space-md">
             <span className="font-label-mono text-label-mono text-on-surface-variant hover:text-primary transition-colors cursor-pointer">

@@ -56,7 +56,7 @@ export default function AboutAndSocialsPage() {
               {/* Tactile Avatar Stage */}
               <div className="relative w-full max-w-[340px] aspect-square rounded-[2rem] bg-surface-container-high clay-sunken p-3 flex items-center justify-center overflow-visible group">
                 <img
-                  alt="Kaelen Vance 3D Clay Portrait"
+                  alt="Mohammad Iqram 3D Clay Portrait"
                   className="w-full h-full object-cover rounded-[1.75rem] transition-transform duration-500 group-hover:scale-105"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCscGGbhv2lVlxEqlHqzw5r8d2QF8_4P45Pw2YrmV5Dimn58no2L9DRtQj21V7PZd4S2x0PNFrQ_WHgut5_rekkjj7vni5pPOdc6ojq9Zwuf-rRaTT8A3oil33CmgIsyecDnk-fKXk1EPj4_v6ssmS9ZHmVVYaGZOQksx4K-TabnV9oeeHPCwW4eahSFQZm9znJLXyfBfKlxjxlpQ-2lrdBJpVijzA0WsLZ_XC-toB7"
                 />
@@ -647,7 +647,7 @@ export default function AboutAndSocialsPage() {
                 </div>
                 <div>
                   <h4 className="font-title-lg text-title-lg text-on-surface">
-                    Kaelen Vance — Dossier Preview
+                    Mohammad Iqram — Dossier Preview
                   </h4>
                   <span className="font-label-mono text-label-mono text-on-surface-variant">
                     Staff Product Designer & Systems Engineer

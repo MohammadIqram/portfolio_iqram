@@ -3,7 +3,7 @@ import "./globals.css";
 import LayoutShell from "@/components/LayoutShell";
 
 export const metadata: Metadata = {
-  title: "Kaelen Vance — Creative Product Designer & Full-Stack Engineer",
+  title: "Mohammad Iqram — Creative Product Designer & Full-Stack Engineer",
   description:
     "Tactile Clay Studio: Senior Product Designer & Full-Stack Architect blending playful 3D aesthetics with enterprise-grade engineering. Volumetric design tokens, micro-interactions, and high-concurrency systems.",
   keywords: [
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     "UI/UX Design",
     "Frontend Architect",
   ],
-  authors: [{ name: "Kaelen Vance" }],
+  authors: [{ name: "Mohammad Iqram" }],
   openGraph: {
-    title: "Kaelen Vance — Creative Product Designer & Full-Stack Engineer",
+    title: "Mohammad Iqram — Creative Product Designer & Full-Stack Engineer",
     description: "Tactile Clay Studio: Sculpting volumetric software that invites human touch.",
     type: "website",
   },
