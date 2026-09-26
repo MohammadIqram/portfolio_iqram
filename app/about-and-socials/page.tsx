@@ -275,7 +275,7 @@ export default function AboutAndSocialsPage() {
                       GitHub
                     </span>
                     <span className="font-label-mono text-label-mono text-on-surface-variant">
-                      @Mohammad Iqram-vance
+                      @Mohammad Iqram
                     </span>
                   </div>
                 </div>
@@ -405,7 +405,7 @@ export default function AboutAndSocialsPage() {
                       X / Threads
                     </span>
                     <span className="font-label-mono text-label-mono text-on-surface-variant">
-                      @Mohammad Iqramvance_ui
+                      @Mohammad Iqramv
                     </span>
                   </div>
                 </div>
