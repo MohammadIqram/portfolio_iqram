@@ -275,7 +275,7 @@ export default function AboutAndSocialsPage() {
                       GitHub
                     </span>
                     <span className="font-label-mono text-label-mono text-on-surface-variant">
-                      @kaelen-vance
+                      @Mohammad Iqram-vance
                     </span>
                   </div>
                 </div>
@@ -371,7 +371,7 @@ export default function AboutAndSocialsPage() {
                   </span>
                 </div>
                 <p className="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 italic">
-                  “Kaelen revolutionized our design tokens and eliminated months of frontend developer re-work.”
+                  “Mohammad Iqram revolutionized our design tokens and eliminated months of frontend developer re-work.”
                 </p>
               </div>
 
@@ -405,7 +405,7 @@ export default function AboutAndSocialsPage() {
                       X / Threads
                     </span>
                     <span className="font-label-mono text-label-mono text-on-surface-variant">
-                      @kaelenvance_ui
+                      @Mohammad Iqramvance_ui
                     </span>
                   </div>
                 </div>

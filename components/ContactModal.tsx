@@ -48,7 +48,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
             <div>
               <h3 className="font-headline-md text-headline-md text-on-surface">Transmission Received!</h3>
               <p className="font-body-md text-body-md text-on-surface-variant mt-2 max-w-md">
-                Thanks {name || "there"}. Kaelen will review your project parameters and respond within 24 hours with architectural notes.
+                Thanks {name || "there"}. Mohammad Iqram will review your project parameters and respond within 24 hours with architectural notes.
               </p>
             </div>
             <div className="px-space-md py-1.5 rounded-full bg-surface-container-high clay-sunken font-label-mono text-label-mono text-tertiary">
